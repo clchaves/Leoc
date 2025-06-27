@@ -6,5 +6,5 @@
   - name: line
     ansible.builtin.lineinfile:
       path: /tmp/semaphore.log
-      line: This was run by semaphore at {{ ansible_date_time.iso8601 }}
+      line: This was written by semaphore at {{ ansible_date_time.iso8601 }}, {{var1}}
       create: yes
